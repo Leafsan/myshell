@@ -25,18 +25,18 @@ Shell이란 유저와 OS 간의 의사소통을 위한 도구라고 할 수 있�
 ## Shell의 기능
 Shell은 기본적으로 크게 다음 세단계로 동작한다.
 
-1.Initialize : 일반적으로 configuration을 읽어오고 지정된 환경을 불러들여 적용하는 단계이다.
-2.Interpret : 실질적으로 입력된 명령문을 읽고 수행하게 된다.
-3.Terminate : 종료 명령문을 받으면 종료한다.
+1. Initialize : 일반적으로 configuration을 읽어오고 지정된 환경을 불러들여 적용하는 단계이다.
+2. Interpret : 실질적으로 입력된 명령문을 읽고 수행하게 된다.
+3. Terminate : 종료 명령문을 받으면 종료한다.
 
 위 기능들 중 Interpret가 실질적으로 Shell이 하는 기능을 담고 있다고 보면 된다.
 
 ## Interpret의 구성
 Interpret는 다음과 같은 기능을 가지고 있다.
 
-1.read : 명령문을 읽어들인다.
-2.parse : 명령문을 parsing해서 단어로 분할한다.
-3.execute : 명령문을 수행한다.
+1. read : 명령문을 읽어들인다.
+2. parse : 명령문을 parsing해서 단어로 분할한다.
+3. execute : 명령문을 수행한다.
 
 MyShell
 ---------
@@ -51,9 +51,9 @@ MyShell
 위에서 설명한 단계대로 명령문을 read, parse, execute한다. Built in 되어있는 명령문은 별로 없기에 기본적으로는 시스템 내부에 선언되어있는 명령을 수행한다.
 
 ### Built in 명령문
-cd : 기존 cd와 동일한 기능을 한다.
-help : shell에 대한 정보와 built in 되어있는 명령문을 출력한다.
-exit : shell을 종료한다.
+* cd : 기존 cd와 동일한 기능을 한다.
+* help : shell에 대한 정보와 built in 되어있는 명령문을 출력한다.
+* exit : shell을 종료한다.
 
 
 결론
